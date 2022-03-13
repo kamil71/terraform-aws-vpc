@@ -53,3 +53,7 @@ No inputs.
 | Name | Description |
 |------|-------------|
 | <a name="lb_dns_name"></a> [lb\_dns\_name](#lb\_dns_\name) | DNS Endpoint for ALB |
+| <a name="public-subnet"></a> [lb\_dns\_name](#public-\subnet) | List of Public Subnets |
+| <a name="private-subnet"></a> [lb\_dns\_name](#private-\subnet) | List of Private Subnets |
+| <a name="vpc_id"></a> [lb\_dns\_name](#vpc_\id) | VPC ID |
+| <a name="ami_value"></a> [lb\_dns\_name](#ammi_\value) | AMI ID |
