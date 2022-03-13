@@ -51,8 +51,8 @@ Note that this example may create resources which cost money. Run `terraform des
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="environment"></a> [environment](#environment) | Environment Type. | `string` | `Production` | yes |
-| <a name="aws_region"></a> [alarm\_configuration](#aws_region) | AWS Region| `string` | `us-east-1` | yes |
-| <a name="key_name"></a> [attributes](#key_name) | SSH key file name | `string` | `[]` | yes |
+| <a name="aws_region"></a> [aws\_region](#aws_region) | AWS Region| `string` | `us-east-1` | yes |
+| <a name="key_name"></a> [key\_name](#key_name) | SSH key file name | `string` | `[]` | yes |
 
 
 ## Outputs
