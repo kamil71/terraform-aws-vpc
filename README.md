@@ -52,8 +52,8 @@ Note that this example may create resources which cost money. Run `terraform des
 |------|-------------|------|---------|:--------:|
 | <a name="environment"></a> [environment](#environment) | Environment Type. | `string` | `Production` | yes |
 | <a name="aws_region"></a> [alarm\_configuration](#aws_region) | AWS Region| `string` | `us-east-1` | yes |
-| <a name="input_attributes"></a> [attributes](#input\_attributes) | ID element. Additional attributes (e.g. `workers` or `cluster`) to add to `id`,<br>in the order they appear in the list. New attributes are appended to the<br>end of the list. The elements of the list are joined by the `delimiter`<br>and treated as a single ID element. | `list(string)` | `[]` | no |
-| <a name="input_auto_rollback_configuration_events"></a> [auto\_rollback\_configuration\_events](#input\_auto\_rollback\_configuration\_events) | The event type or types that trigger a rollback. Supported types are `DEPLOYMENT_FAILURE` and `DEPLOYMENT_STOP_ON_ALARM`. | `string` | `"DEPLOYMENT_FAILURE"` | no |
+| <a name="key_name"></a> [attributes](#key_name) | SSH key file name | `string` | `[]` | yes |
+
 
 ## Outputs
 
