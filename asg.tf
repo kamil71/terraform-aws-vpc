@@ -9,12 +9,17 @@ resource "aws_launch_configuration" "web" {
   key_name        = var.key_name
   user_data       = <<EOF
 #!/bin/bash -xe
-sudo apt update
-sudo hostnamectl set-hostname ubuntusrv.citizix.com
-sudo apt install -y nginx vim
-sudo cat > /var/www/html/hello.html <<EOD
-Hello world!
-EOD
+sudo apt update -y
+sudo apt install php php-memcache git apache2 -y
+# Clone repository
+git clone https://github.com/aws-samples/aws-ec2-autoscaling-php-app-demo.git
+sudo mv aws-ec2-autoscaling-php-app-demo/src/app/* /var/www/html/
+sudo mv aws-ec2-autoscaling-php-app-demo/src/image/ /var/www/html/
+sudo mv aws-ec2-autoscaling-php-app-demo/src/css/ /var/www/html/
+# Update config files
+# Start apache
+sudo service apache2 restart
+chkconfig httpd on
 EOF
   lifecycle {
     create_before_destroy = true
