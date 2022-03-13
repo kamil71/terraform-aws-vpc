@@ -20,6 +20,11 @@ EOF
     create_before_destroy = true
   }
 } ## Creating AutoScaling Group
+
+
+
+
+
 resource "aws_autoscaling_group" "web" {
   depends_on = [
     aws_launch_configuration.web,

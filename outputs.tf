@@ -30,3 +30,7 @@ output "vpc_id" {
   description = "ID of project VPC"
   value       = aws_vpc.vpc.id
 }
+
+output "sns_arn" {
+  value = "${aws_sns_topic.web-cpu-alarm.arn}"
+}

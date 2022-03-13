@@ -92,4 +92,8 @@ variable "availability_zones" {
   type        = list(any)
   description = "List of availability zones"
 }
- 
+
+variable "alarms_email" {
+  default     = "pkamil717@gmail.com"
+  type = string
+}
