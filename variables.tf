@@ -51,7 +51,7 @@ variable "sg_ports" {
 
 # Definign Key Name for connection
 variable "key_name" {
-  default     = "kamil-terraform"
+#  default     = "kamil-terraform"
   description = "Name of AWS key pair"
 }
 
@@ -94,6 +94,6 @@ variable "availability_zones" {
 }
 
 variable "alarms_email" {
-  default     = "pkamil717@gmail.com"
+#  default     = "pkamil717@gmail.com"
   type = string
 }
